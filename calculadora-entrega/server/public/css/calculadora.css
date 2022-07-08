@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 750px;
+
+}
+
+.calculadora{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;;
+}
+
+.calculadora-interna {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 20px;
+}
+
+.nome-logado {
+    font-size: 2.5rem;
+}
+
+.caixa{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 40px;
+}
+
+.caixa .operacao{
+    height: 80px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: flex-end;
+    padding: 5px 10px;
+}
+
+.caixa .operacao .resultado{
+    font-size: xx-large;
+}
+
+.caixa .botoes{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.caixa .botoes .linha {
+    margin: 5px 0;
+}
+
+.caixa .botoes .linha button {
+    width: 60px;
+    height: 60px;
+    font-size: x-large;
+}
+
+.caixa .botoes .linha button.botao-calculo {
+    width: 120px;
+}
+
+.historico{
+    padding: 5px;
+    height: 425px;
+    overflow: scroll;
+}
+
+.template-linha {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.float-right {
+    float: right;
+}

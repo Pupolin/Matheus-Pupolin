@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+
+<body>
+    <div class="container h-100">
+        <div class="acesso">
+            <h1 class="display-4">Calculadora</h1>
+            <p class="lead">Para acessar essa calculadora digite o seu nome.</p>
+            <input type="text" maxlength="100" id="input-usuario" class="form-control" placeholder="Seu nome"
+                required>
+            <div class="invalid-feedback">
+                O seu nome é obrigatório.
+            </div>
+            <hr class="my-4">
+            <button id="acessar" class="btn btn-primary float-right">Acessar</button>
+        </div>
+        <div class="calculadora hidden">
+            <span class="nome-logado text-primary"></span>
+            <div class="calculadora-interna">
+                <div class="caixa">
+                    <div class="operacao border border-secondary rounded">
+                        <span class="resultado"></span>
+                    </div>
+                    <div class="botoes">
+                        <div class="linha">
+                            <button class="btn btn-outline-primary botao-limpar">C</button>
+                            <button class="btn btn-outline-secondary botao-abrir-parenteses">(</button>
+                            <button class="btn btn-outline-secondary botao-fechar-parenteses">)</button>
+                            <button class="btn btn-primary botao-operador">+</button>
+                        </div>
+                        <div class="linha">
+                            <button class="btn btn-outline-secondary botao-numerico">7</button>
+                            <button class="btn btn-outline-secondary botao-numerico">8</button>
+                            <button class="btn btn-outline-secondary botao-numerico">9</button>
+                            <button class="btn btn-primary botao-operador">-</button>
+                        </div>
+                        <div class="linha">
+                            <button class="btn btn-outline-secondary botao-numerico">4</button>
+                            <button class="btn btn-outline-secondary botao-numerico">5</button>
+                            <button class="btn btn-outline-secondary botao-numerico">6</button>
+                            <button class="btn btn-primary botao-operador">/</button>
+                        </div>
+                        <div class="linha">
+                            <button class="btn btn-outline-secondary botao-numerico">1</button>
+                            <button class="btn btn-outline-secondary botao-numerico">2</button>
+                            <button class="btn btn-outline-secondary botao-numerico">3</button>
+                            <button class="btn btn-primary botao-operador">*</button>
+                        </div>
+                        <div class="linha">
+                            <button class="btn btn-outline-secondary botao-numerico">0</button>
+                            <button class="btn btn-outline-secondary botao-virgula">.</button>
+                            <button class="btn btn-primary botao-calculo">=</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="historico">
+                    <div class="template-linha">
+                        <span class="text-primary nome">Matheus</span>:
+                        <span class="formula">10</span>
+                        =
+                        <span class="resultado">12</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+
+</html>
